@@ -1,0 +1,130 @@
+@media screen and (max-width: 1200px){
+  .homeCards{
+    gap: 2vw;
+  }
+  .box{
+    max-width: 170px;
+    height: 200px;
+  }
+
+  .box .content {
+    padding: 0;
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .homeCenter h3 {
+    margin-top: 15rem;
+    font-size: 2rem;
+  }
+
+  .homeCenter p {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .box{
+    max-width: 150px;
+    height: 150px;
+  }
+
+  .box .content {
+    padding: 0;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .home {
+    border-top: 1px solid #fffcff20;
+    background: transparent;
+    max-width: 480px;
+  }
+  .homeCenter {
+    display: none;
+  }
+
+  .homeCards {
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, .5fr);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .homeCardsBox{
+    max-width: 100%;
+
+  }
+
+  @keyframes blind {
+    0%   {  background-position: 0% }
+    25%  {  background-position: 50% }
+    50%  {  background-position: 100%}
+    75%  {  background-position: 50% }
+    100% {  background-position: 0% }
+  }
+
+  .box {
+    width: 80%;
+    border-radius: 10%;
+    overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    height: 100px;
+    animation: blind 8s ease-in infinite;
+    background-image: linear-gradient( 109.6deg,  rgba(239,61,78,0.63) 11.2%, rgb(240, 103, 116)91.1% );
+    background-size: 150%;
+  }
+ 
+  .box::before {
+display: none;
+  }
+  .box::after {
+      display: none;
+  }
+
+  .box span::before {
+    display: none;
+  }
+  .box span::after {
+    display: none;
+  }
+  .box .content {
+    width: 0;
+    height: 60px;
+  }
+  .box .content h2 {
+    font-size: 0.8rem;
+  }
+
+  .content1 h3{
+display: none;
+  }
+  .cheesyP {
+    display: none;
+  }
+
+  .content1 button{
+    background:radial-gradient( circle farthest-corner at 14.2% 24%, rgba(239,61,78,1) 0%, rgba(239,61,78,0.81) 51.8%, rgba(239,61,78,0.63) 84.6% )
+  }
+  .content1 button::before{
+    background:radial-gradient( circle farthest-corner at 14.2% 24%, rgba(239,61,78,1) 0%, rgba(239,61,78,0.81) 51.8%, rgba(239,61,78,0.63) 84.6% )
+  }
+  .content1 button:active{
+    background:radial-gradient( circle farthest-corner at 14.2% 24%, rgba(239,61,78,1) 0%, rgba(239,61,78,0.81) 51.8%, rgba(239,61,78,0.63) 84.6% )
+  }
+  
+  .productCards{
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  
+}

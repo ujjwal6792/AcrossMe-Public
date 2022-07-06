@@ -1,0 +1,15 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.app{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media screen and (max-width: 480px){
+    .app{
+        max-width: 480px;
+    }
+}
