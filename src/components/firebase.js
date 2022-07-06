@@ -17,28 +17,13 @@ import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyBNf0uVP8m5enZcMbaAYr_FQwaL3NQHrQk",
-
-  authDomain: "acrossme-2e167.firebaseapp.com",
-
-  projectId: "acrossme-2e167",
-
-  storageBucket: "acrossme-2e167.appspot.com",
-
-  messagingSenderId: "640826687071",
-
-  appId: "1:640826687071:web:d4d36f678956e87822e5ea",
-
-  measurementId: "G-8Z9S2ZMXMD"
-
+// add firebase config files
 };
 
 
 // Initialize Firebase
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-
-// const db = initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
 const storage = getStorage(firebaseApp);
